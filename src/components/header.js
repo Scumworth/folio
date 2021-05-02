@@ -24,7 +24,13 @@ const Header = () => {
     return (
         <StyledHeader>
             <Link to="/" aria-label="home">
-                <StyledLogo>km.</StyledLogo>
+                <StyledLogo>/</StyledLogo>
+            </Link>
+            <Link to="/projects" aria-label="projects">
+                <StyledLogo>/projects</StyledLogo>
+            </Link>
+            <Link to="/contact" aria-label="contact">
+                <StyledLogo>/contact</StyledLogo>
             </Link>
         </StyledHeader>
     )
