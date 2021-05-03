@@ -22,8 +22,7 @@ export const pageQuery = graphql`
                     frontmatter {
                         title
                         greetings
-                        subtitlePrefix
-                        subtitleHighlight
+                        subtitle
                     }
                     rawMarkdownBody
                 }

@@ -1,10 +1,10 @@
-import React from "react"
+import * as React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledHeader = styled.header`
     width: 100%;
-    max-width: 62.5rem;
+    max-width: 92.5rem;
     height: 6.25rem;
     margin: 0 auto;
     padding: 0 2.5rem;
@@ -13,25 +13,46 @@ const StyledHeader = styled.header`
     justify-content: flex-start;
     align-items: center;
 `
+const StyledHome = styled.div`
+    flex: 2; 
+    display: flex;
+    justify-content: flex-start;
+`
 
-const StyledLogo = styled.div`
-    font-size: 2rem;
-    font-weight: 900;
+
+const StyledPageLinks = styled.div`
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+`
+const StyledLink = styled(Link)`
+    font-size: 1.5em;
     color: black;
+    font-weight: 600;
+    &.active {
+        text-decoration: underline;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
 `
 
 const Header = () => {
     return (
         <StyledHeader>
-            <Link to="/" aria-label="home">
-                <StyledLogo>/</StyledLogo>
-            </Link>
-            <Link to="/projects" aria-label="projects">
-                <StyledLogo>/projects</StyledLogo>
-            </Link>
-            <Link to="/contact" aria-label="contact">
-                <StyledLogo>/contact</StyledLogo>
-            </Link>
+            <StyledHome>
+                <StyledLink to="/" activeClassName="active" aria-label="home">
+                     /about
+                </StyledLink>
+            </StyledHome>
+            <StyledPageLinks>
+                <StyledLink to="/projects" activeClassName="active" aria-label="projects">
+                    /projects
+                </StyledLink>
+                <StyledLink to="/contact" activeClassName="active" aria-label="contact">
+                    /contact
+                </StyledLink>
+            </StyledPageLinks>
         </StyledHeader>
     )
 }
