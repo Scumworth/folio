@@ -1,7 +1,5 @@
 import * as React from "react"
 import styled = "styled-components"
-import { StaticQuery, graphql } from "gatsby"
-
 const StyledProject = styled.div`
     width: 100%
 `
