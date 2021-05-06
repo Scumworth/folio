@@ -13,8 +13,8 @@ const StyledLayout = styled.div`
     grid-template-rows: auto 1fr auto;
     grid-template-columms: 100%;
     #main-content {
-       width: 100%
-       max-width: 62.5rem;
+       width: 100%;
+       max-width: 90rem;
        margin: 0 auto;
        padding: 0 2.5rem;
     }

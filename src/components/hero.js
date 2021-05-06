@@ -13,6 +13,7 @@ import { FaNode } from '@react-icons/all-files/fa/FaNode';
 
 
 const StyledSection = styled.section`
+    width: 100%;
     .title {
         margin-bottom: 0;
         font-size: 6rem;
