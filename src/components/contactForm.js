@@ -2,21 +2,35 @@ import * as React from "react"
 import styled from "styled-components"
 
 const StyledForm = styled.form`
-    width: 100%;
+    width: 50%;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top:75px;
     > input {
-        height: 50px;
+        height: 70px;
+        border: 3px solid #ccc;
+        font-size: 28px;
     }
     > input, textarea {
         border-radius: 5px;
-        width: 50%
+        width: 100%;
+        padding: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    textarea {
+        font-size: 14px;
     }
     .buttonWrap {
         display: flex;
         flex-direction: row;
+    }
+    > label {
+        align-self: flex-start;
     }
 `
 
@@ -39,8 +53,8 @@ const ContactForm = () => (
         </label>
             <textarea name="message" id="message" rows="5" />
         <span className="buttonWrap">
-            <button type="submit">Send</button>
-            <input type="reset" value="Clear" />
+            <button className="formButton" type="submit">Send</button>
+            <input className="formButton" type="reset" value="Clear" />
             <input type="text" name="_gotcha" style={{ display: "none" }} />
         </span>
 

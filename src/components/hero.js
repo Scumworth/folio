@@ -1,19 +1,18 @@
 import * as React from "react"
 import styled from "styled-components"
-import { SiRust } from '@react-icons/all-files/si/SiRust';
-import { SiJavascript } from '@react-icons/all-files/si/SiJavascript';
-import { FaReact } from '@react-icons/all-files/fa/FaReact';
-import { FaPhp } from '@react-icons/all-files/fa/FaPhp';
-import { FaHtml5 } from '@react-icons/all-files/fa/FaHtml5';
-import { FaCss3 } from '@react-icons/all-files/fa/FaCss3';
-import { SiRedis } from '@react-icons/all-files/si/SiRedis';
-import { SiMysql } from '@react-icons/all-files/si/SiMysql';
-import { SiMongodb } from '@react-icons/all-files/si/SiMongodb';
-import { FaNode } from '@react-icons/all-files/fa/FaNode';
+import { SiRust } from '@react-icons/all-files/si/SiRust'
+import { SiJavascript } from '@react-icons/all-files/si/SiJavascript'
+import { FaReact } from '@react-icons/all-files/fa/FaReact'
+import { FaPhp } from '@react-icons/all-files/fa/FaPhp'
+import { FaHtml5 } from '@react-icons/all-files/fa/FaHtml5'
+import { FaCss3 } from '@react-icons/all-files/fa/FaCss3'
+import { SiRedis } from '@react-icons/all-files/si/SiRedis'
+import { SiMysql } from '@react-icons/all-files/si/SiMysql'
+import { SiMongodb } from '@react-icons/all-files/si/SiMongodb'
+import { FaNode } from '@react-icons/all-files/fa/FaNode'
 
 
 const StyledSection = styled.section`
-    width: 100%;
     .title {
         margin-bottom: 0;
         font-size: 6rem;

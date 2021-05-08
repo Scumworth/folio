@@ -6,7 +6,6 @@ import ContactForm from "../components/contactForm"
 const ContactPage = () => {
     return (
         <Layout>
-            <h1>Contact</h1>
             <ContactForm />
         </Layout>
     )

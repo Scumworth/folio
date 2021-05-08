@@ -1,12 +1,41 @@
 import * as React from "react"
-import styled = "styled-components"
+import Img from "gatsby-image"
+import styled from "styled-components"
+
 const StyledProject = styled.div`
-    width: 100%
+    display: flex;
+    margin-bottom: 30px;
+`
+const StyledProjectPrimer = styled.span`
+    flex: 1;
+    background-color: #000000;
+    padding: 14px;
+    * {
+        color: #ffffff;
+    }
+`
+const StyledProjectImage = styled.span`
+    flex: 3;
 `
 
-const Project = () => {
+const Project = ({ data }) => {
+    console.log("TEST");
+    console.log(data);
+    const { frontmatter, rawMarkdownBody } = data
+    const { title, screenshot } = frontmatter
     return (
-        <StyledProject>Project</StyledProject>
+        <StyledProject>
+            <StyledProjectImage>
+                <Img
+                    className="screenshot"
+                    fluid={screenshot.childImageSharp.fluid}
+                />
+            </StyledProjectImage>
+            <StyledProjectPrimer>
+                <h2>{title}</h2>
+                <p>{rawMarkdownBody}</p>
+            </StyledProjectPrimer>
+        </StyledProject>
     )
 }
 

@@ -16,7 +16,11 @@ export default IndexPage
 
 export const pageQuery = graphql`
     {
-        hero: allMarkdownRemark {
+        hero: allMarkdownRemark(
+            filter: {
+                fileAbsolutePath: { regex: "/content/hero/" }
+            }
+        ) {
             edges {
                 node {
                     frontmatter {

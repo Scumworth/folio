@@ -31,9 +31,11 @@ const StyledLink = styled(Link)`
     font-weight: 600;
     &.active {
         text-decoration: underline;
+        text-decoration-color: orange;
     }
     &:hover {
         text-decoration: underline;
+        text-decoration-color: orange;
     }
 `
 
