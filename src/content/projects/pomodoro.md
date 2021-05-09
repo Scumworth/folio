@@ -2,7 +2,8 @@
 title: "Pomodoro Clock"
 visible: true
 screenshot: "./pomodoro_screenshot.png"
-github: "https://github.com"
+source: "https://codepen.io/Scumworth/pen/xwxwwv"
+live: "https://codepen.io/Scumworth/full/xwxwwv"
 ---
 
-This is a description of the Pomodoro Clock
+Pomodoro Clock with editable rest and work periods, sound, and a changing background.

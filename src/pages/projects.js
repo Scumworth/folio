@@ -26,7 +26,8 @@ export const pageQuery = graphql`
                 node {
                     frontmatter {
                         title
-                        github
+                        live
+                        source
                         screenshot {
                             childImageSharp {
                                 fluid(maxWidth: 800, quality: 90) {

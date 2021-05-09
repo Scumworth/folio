@@ -29,6 +29,17 @@ const StyledForm = styled.form`
         display: flex;
         flex-direction: row;
     }
+    .formButton {
+        border: 2px solid black;
+        background-color: #ffffff;
+        padding: 5px;
+        margin: 5px;
+        font-family: "Bungee", Arial, Helvetica, sans-serif;
+    }
+    .formButton:hover {
+        background-color: orange;
+        cursor: pointer;
+    }
     > label {
         align-self: flex-start;
     }
