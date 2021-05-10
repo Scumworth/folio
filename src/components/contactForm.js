@@ -46,7 +46,7 @@ const StyledForm = styled.form`
 `
 
 const ContactForm = () => (
-    <StyledForm method="post" action="https://formspree.io/email@domain.tld">
+    <StyledForm method="post" action="https://formspree.io/f/xoqyjgzk">
         <label>
             Name
         </label>
